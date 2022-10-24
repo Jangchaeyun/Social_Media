@@ -1,10 +1,11 @@
 import React from 'react';
+import LogoSearh from '../LogoSearch/LogoSearh';
 
 const ProfileSide = () => {
   return (
     <div>
       <div className="ProfileSide">
-        ProfileSide
+        <LogoSearh />
       </div>
     </div>
   );
