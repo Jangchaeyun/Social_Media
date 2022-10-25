@@ -2,7 +2,7 @@ import React from 'react'
 import { Followers } from '../../Data/FollowersData'
 import './FollowersCard.css'
 
-const FollowCard = () => {
+const FollowCards = () => {
   return (
     <div className='FollowersCard'>
       <h3>누가 당신을 팔로우하고 있나요</h3>
@@ -27,4 +27,4 @@ const FollowCard = () => {
   )
 }
 
-export default FollowCard
+export default FollowCards
