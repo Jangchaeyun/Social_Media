@@ -1,14 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './InfoCard.css'
+import ProfileModal from '../ProfileModal/ProfileModal'
 import { UilPen } from '@iconscout/react-unicons'
 
 const InfoCard = () => {
+
+    const [modalOpened, setModalOpened] = useState(false);
   return (
     <div className="InfoCard">
         <div className="infoHead">
             <h4>나의 정보</h4>
             <div>
-                <UilPen width='2rem' height='1.2rem'/>
+                <UilPen width='2rem' height='1.2rem' onClick={() => setModalOpened(true)}/>
+                <ProfileModal modalOpened={modalOpened} setModalOpened={setModalOpened}/>
             </div>
         </div>
         <div className="info">
